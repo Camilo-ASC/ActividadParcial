@@ -1,0 +1,147 @@
+ion-content {
+  --background: var(--secondary-color);
+  padding: 15px;
+}
+
+
+.cart-container {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+ion-list {
+  border-radius: 12px;
+  padding: 10px;
+}
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 15px rgba(140, 82, 255, 0.4);
+}
+
+
+ion-thumbnail img {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+}
+
+
+.cart-details {
+  flex-grow: 1;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-details h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.cart-details p {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.quantity-btn {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.quantity-btn:hover {
+  transform: scale(1.05);
+}
+
+
+ion-input {
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.delete-btn {
+  color: red;
+  font-size: 22px;
+  margin-left: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+  color: rgb(255, 80, 80);
+}
+
+
+.cart-summary {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+}
+
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+
+.checkout-btn {
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(140, 82, 255, 0.5);
+}

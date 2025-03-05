@@ -1,0 +1,131 @@
+ion-content {
+  --background: var(--secondary-color);
+  padding: 15px;
+}
+
+.product-container {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-details-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.product-category {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.product-rating {
+  font-size: 16px;
+  color: gold;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.quantity-button {
+  background: var(--primary-color);
+  color: white;
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+
+.quantity-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.description-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.add-to-cart-button {
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(140, 82, 255, 0.5);
+}
+
+.cart-button {
+    position: relative;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    ion-icon {
+      font-size: 24px;
+    }
+  
+    ion-badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      font-size: 12px;
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 3px 6px;
+    }
+  
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 4px 10px rgba(140, 82, 255, 0.5);
+    }
+  }
