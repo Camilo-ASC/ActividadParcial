@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Detalles</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/cart" class="cart-button">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-badge *ngIf="cartService.getCartCount() > 0">{{ cartService.getCartCount() }}</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="product-container">
+    <img class="product-image" [src]="product.image" alt="{{ product.title }}">
+
+    <ion-card class="product-details-card">
+      <ion-card-header>
+        <ion-card-title class="product-title">{{ product.title }}</ion-card-title>
+        <ion-card-subtitle class="product-category">Categoría: {{ product.category }}</ion-card-subtitle>
+        <p class="product-price"><strong>Precio:</strong> \${{ product.price }}</p>
+        <p class="product-rating"><strong>Calificación:</strong> ⭐ {{ product.rating?.rate }} ({{ product.rating?.count }} votos)</p>
+      </ion-card-header>
+    </ion-card>
+
+    <div class="quantity-container">
+      <ion-button class="quantity-button" fill="clear" (click)="decreaseQuantity()">-</ion-button>
+      <span class="quantity-value">{{ quantity }}</span>
+      <ion-button class="quantity-button" fill="clear" (click)="increaseQuantity()">+</ion-button>
+    </div>
+
+    <div class="description-container">
+      <p class="product-description">{{ product.description }}</p>
+    </div>
+
+    <ion-button expand="block" class="add-to-cart-button" (click)="addToCart()">🛒 Añadir al carrito</ion-button>
+  </div>
+</ion-content>

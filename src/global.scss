@@ -35,3 +35,72 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+
+
+:root {
+  --primary-color: #8c52ff; // Morado principal
+  --secondary-color: #1e1e2d; // Fondo oscuro
+  --text-color: #ffffff; // Texto blanco
+  --card-bg: #2a2a3d; // Tarjetas oscuras con contraste
+  --button-hover: rgba(140, 82, 255, 0.7);
+}
+
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.glass-content {
+  background: rgba(9, 10, 14, 0.829);
+  box-shadow: 0 4px 30px rgba(7, 77, 216, 0.1);
+  backdrop-filter: blur(25.3px);
+  -webkit-backdrop-filter: blur(25.3px);
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+ion-button {
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+ion-button:active {
+  transform: scale(0.95);
+}
+
+ion-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px var(--button-hover);
+}
+
+
+.card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 15px rgba(140, 82, 255, 0.5);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ion-content {
+  animation: fadeIn 0.8s ease-in-out;
+}
