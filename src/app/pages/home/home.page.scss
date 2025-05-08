@@ -11,8 +11,6 @@ ion-content {
     max-width: 400px; 
     margin: 10px auto !important; 
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     color: var(--text-color);
     display: block; 
